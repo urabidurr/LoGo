@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        chakra: ["Chakra Petch", "sans-serif"] 
+      },
       container: {
         center: true,
         padding: {
