@@ -5,16 +5,16 @@ import Logo from "../assets/logo.png";
 const PCNav = [
     {
         name: "Home",
-        href: "https://logo-2-me.web.app/", 
+        href: "/home", 
         //links
     },
     {
         name: "About",
-        href: "https://logo-2-me.web.app/",
+        href: "/about",
     },
     {
         name: "Contact",
-        href: "https://logo-2-me.web.app/",
+        href: "/contact",
     },
     {
         name: "Login",

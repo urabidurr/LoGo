@@ -1,29 +1,23 @@
 import React from "react"
-import Navbar from "./components/Navbar.js"
-import Hero from "./components/Hero.js"
-import BgImage from "./assets/bgimage.jpg"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import About from "./pages/About.js"
+import Contact from "./pages/Contact.js"
+import Home from "./pages/Home.js"
+import Error from "./pages/Error.js"
 
 function App() {
-
-  const bgImage = {
-    backgroundImage: `url(${BgImage})`, 
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    height: "100%",
-    width: "100%,"
-  }
-
   return(
     <>
-    <head>
-      <title>LoGo</title>
-      <link rel="icon" type="image/png" href="./assets/logo.png"/>
-    </head>
-    <div style={bgImage}>
-      <Navbar/>
-      <Hero/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
