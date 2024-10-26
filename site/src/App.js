@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import About from "./pages/About.js"
@@ -6,8 +6,12 @@ import Contact from "./pages/Contact.js"
 import Home from "./pages/Home.js"
 import Error from "./pages/Error.js"
 import Map from "./pages/Map.js"
+// import Loading from "./components/Loading.js"
 
 function App() {
+
+  // const[isLoading, setIsLoading] = useState(true)
+
   return(
     <>
     <BrowserRouter>

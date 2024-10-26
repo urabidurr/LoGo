@@ -4,11 +4,10 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <div className="max-w-2xl mx-auto p-6 bg-green-50 shadow-lg rounded-lg mt-10 pt-16">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">Contact Me</h1>
+            <div className="max-w-2xl mx-auto p-6 bg-green-50 shadow-lg rounded-lg mt-10">
+                <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">Contact Us</h1>
                 <p className="text-gray-700 text-center mb-6">
-                    I'm always open to discussing new opportunities, collaborations, or just connecting. 
-                    Feel free to reach out using the form below!
+                    Any questions, comments, and concerns will be appreciated. <br></br> Your input helps us improve!
                 </p>
                 <form className="space-y-4">
                     <div>
@@ -18,7 +17,7 @@ const Contact = () => {
                             id="name"
                             name="name"
                             required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                     </div>
                     <div>
@@ -28,7 +27,7 @@ const Contact = () => {
                             id="email"
                             name="email"
                             required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                     </div>
                     <div>
@@ -38,21 +37,21 @@ const Contact = () => {
                             name="message"
                             rows="4"
                             required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
                         ></textarea>
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200"
+                        className="w-full bg-green-500 text-white font-semibold py-2 rounded hover:bg-green-600 transition duration-200 m-auto"
                     >
-                        Send Message
+                        Send
                     </button>
                 </form>
-                <div className="mt-6">
+                {/* <div className="mt-6">
                     <h2 className="text-2xl font-semibold text-gray-800">Other Ways to Reach Me</h2>
                     <p className="text-gray-700">Email: <a href="mailto:your-email@example.com" className="text-blue-500 hover:underline">your-email@example.com</a></p>
                     <p className="text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Your LinkedIn Profile</a></p>
-                </div>
+                </div> */}
             </div>
         </>
     );
