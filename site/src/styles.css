@@ -16,3 +16,12 @@
     font-weight: 900;
     font-size: 1.5rem;
 }
+
+.map-container {
+    height: calc(100vh - 0px); /* Full height minus the navbar height */
+    width: 60%; /* Full width */
+    margin-top: 73px; /* Adjust this value to create space from the top */
+    margin-left: auto; /* Push the map to the right */
+    margin-right: 0; /* No right margin */
+    position: relative; /* Ensure relative positioning */
+}
